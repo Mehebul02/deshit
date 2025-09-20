@@ -1,8 +1,9 @@
+import BannerSection from "../../components/banner/Banner";
 
 const Home = () => {
     return (
         <div>
-            <h1>Home page</h1>
+            <BannerSection />
         </div>
     );
 };
