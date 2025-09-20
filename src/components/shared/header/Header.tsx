@@ -6,6 +6,7 @@ import { Button } from "../../ui/button"
 import { logo } from "../../../assets/images"
 import Mobile from "./Mobile"
 import DesktopMenu from "./DasktopMenu"
+import Container from "./Container"
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -19,8 +20,6 @@ const navigation = [
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const pathname = useLocation().pathname
-
- 
   const listVariants = {
     hidden: { opacity: 0, y: -20 },
     visible: (i: number) => ({
@@ -36,16 +35,18 @@ export default function Header() {
 
   return (
     <header className="bg-white shadow-sm">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
+     <Container>
+
+       <nav className="= flex = items-center justify-between p-6 lg:px-8">
         {/* Logo */}
         <div className="flex lg:flex-1">
           <Link to="/" className="-m-1.5 p-1.5 flex items-center gap-2">
-                <img src={logo} alt="DestNIT Logo" className="w-52"/>
+                <img src={logo} alt="DestNIT Logo" className="w-32 lg:w-52 "/>
           </Link>
         </div>
 
         {/* Mobile toggle */}
-        <div className="flex lg:hidden">
+        <div className="flex justify-end   ml-32 lg:hidden">
           <Button
             variant="ghost"
             size="sm"
@@ -67,6 +68,7 @@ export default function Header() {
    navigation={navigation}
     pathname={pathname}
     />
+     </Container>
     </header>
   )
 }
