@@ -6,7 +6,7 @@ import MainCircle from "./Main_Circle"
 
 export default function BannerSection() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className=" bg-white">
       <div className="container mx-auto px-6 py-16 lg:py-24">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
