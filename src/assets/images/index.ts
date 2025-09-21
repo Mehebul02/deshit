@@ -11,6 +11,7 @@ import logo3 from "./companies_logo/logo3.png";
 import logo4 from "./companies_logo/logo4.png";
 import logo5 from "./companies_logo/logo5.png";
 import profile from "./profile.png";
+import workflow from "./workflow.png"
 
 export {
     logo,
@@ -25,5 +26,6 @@ export {
     logo3,
     logo4,
     logo5,
-    profile
+    profile,
+    workflow
 };

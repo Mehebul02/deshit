@@ -1,6 +1,7 @@
 
 import BannerSection from "../../components/banner/Banner";
 import { ServiceOfferings } from "../../components/banner/ServiceOfferings";
+import DevelopmentWorkflow from "../../components/development_workflow/Development_Workflow";
 import DevelopmentOutsourcing from "../../components/developmentOutsourcing/DevelopmentOutsourcing";
 import { LogoSlider } from "../../components/logo_slider/LogoSlider";
 import { ProfessionalBanner } from "../../components/professional_banner/Professional_Banner";
@@ -17,7 +18,8 @@ const Home = () => {
             </Container>
             <ProfessionalBanner />
             <SoftwareDevelopmentServices />
-            <DevelopmentOutsourcing/>
+            <DevelopmentOutsourcing />
+            <DevelopmentWorkflow/>
         </div>
     );
 };
