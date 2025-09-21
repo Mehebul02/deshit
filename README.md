@@ -8,10 +8,7 @@ This project is a **completed UI implementation** for a MERN Stack Developer tas
 - **Animations:** Framer Motion / CSS / React Spring / GSAP  
 
 ## Live Demo
-- [View Live Demo on Vercel](#)  <!-- Replace # with your live URL -->
-
-## GitHub Repository
-- [Frontend Repo](#)  <!-- Replace # with your GitHub URL -->
+- [View Live Demo on Vercel](#)  
 
 ## Features Implemented
 - Pixel-perfect UI sections according to Figma design  
