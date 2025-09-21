@@ -29,7 +29,7 @@ export default function SoftwareDevelopmentServices() {
       scale: 1,
       transition: {
         duration: 0.5,
-        ease: "easeOut", 
+        ease: "easeOut" as const , 
       },
     },
     hover: {
@@ -37,7 +37,7 @@ export default function SoftwareDevelopmentServices() {
       scale: 1.02,
       transition: {
         duration: 0.2,
-        ease: "easeInOut", // use a valid string for ease
+        ease: "easeInOut" as const ,
       },
     },
   }
@@ -63,7 +63,7 @@ export default function SoftwareDevelopmentServices() {
           {services.map((service, index) => {
             const IconComponent = service.icon
             return (
-              <motion.div key={index} variants={cardVariants} whileHover="hover" className="cursor-pointer">
+              <motion.div key={index}  variants={cardVariants } animate="active" whileHover="hover" className="cursor-pointer">
                 <Card className="bg-card border border-border hover:shadow-lg transition-shadow duration-300 p-6 h-full">
                   <CardContent className="p-0">
                     <div className="flex flex-col items-center text-center space-y-4">
