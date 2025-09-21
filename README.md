@@ -1,4 +1,4 @@
-# MERN Stack UI Implementation – Animations Task ✅
+# deashIt
 
 This project is a **completed UI implementation** for a MERN Stack Developer task. It features pixel-perfect frontend sections with animations, built using **React** based on a Figma design.
 
@@ -28,5 +28,5 @@ This project is a **completed UI implementation** for a MERN Stack Developer tas
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Mehebul02/roleDash.git
+   git clone https://github.com/Mehebul02/deshit
 
