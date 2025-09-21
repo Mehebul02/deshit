@@ -90,7 +90,7 @@ export default function Footer() {
         {/* Copyright Section */}
         <div className="border-t border-gray-200 pt-6">
           <p className="text-center text-sm text-gray-500">
-            © 2023 All Rights Reserved Design by <span className="text-red-500 font-medium">ORBIT-BD</span>
+            © 2025 All Rights Reserved Design by <span className="text-red-500 font-medium">ORBIT-BD</span>
           </p>
         </div>
       </div>
