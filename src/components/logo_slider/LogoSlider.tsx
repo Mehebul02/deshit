@@ -1,42 +1,32 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
+import 'swiper/swiper-bundle.css';
 import 'swiper/css';         
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from "swiper/modules"
+import { logo1, logo2, logo3, logo4, logo5 } from '../../assets/images';
 
 
 const companies = [
   {
     name: "UN",
-    logo: "/un-united-nations-logo-blue.jpg",
+    logo: logo1,  
   },
   {
     name: "UNDP",
-    logo: "/undp-united-nations-development-programme-logo-blu.jpg",
+    logo: logo2,  
   },
   {
     name: "ITC",
-    logo: "/itc-international-trade-center-logo-blue.jpg",
-  },
-  {
-    name: "Telenor",
-    logo: "/telenor-telecommunications-logo-blue.jpg",
+    logo: logo3,  
   },
   {
     name: "Nokia",
-    logo: "/nokia-technology-company-logo-black.jpg",
+    logo: logo4, 
   },
   {
     name: "Vivo",
-    logo: "/vivo-smartphone-brand-logo-black.jpg",
+    logo: logo5,  
   },
-  {
-    name: "Microsoft",
-    logo: "/microsoft-technology-company-logo.jpg",
-  },
-  {
-    name: "Google",
-    logo: "/google-search-engine-logo-colorful.jpg",
-  },
+  
 ]
 
 export function LogoSlider() {
@@ -76,7 +66,7 @@ export function LogoSlider() {
         >
           {[...companies, ...companies].map((company, index) => (
             <SwiperSlide key={`${company.name}-${index}`}>
-              <div className="flex items-center justify-center p-4 grayscale hover:grayscale-0 transition-all duration-300 hover:scale-110">
+              <div className="flex items-center justify-center p-4 hover:scale-110 transition-all duration-300">
                 <img
                   src={company.logo || "/placeholder.svg"}
                   alt={`${company.name} logo`}
@@ -106,7 +96,7 @@ export function LogoSlider() {
           }}
           className="logo-swiper"
         >
-          {companies.map((company, ) => (
+          {companies.map((company) => (  // Also fixed the missing index parameter
             <SwiperSlide key={company.name}>
               <div className="flex items-center justify-center p-8">
                 <img
@@ -114,7 +104,7 @@ export function LogoSlider() {
                   alt={`${company.name} logo`}
                   width={150}
                   height={75}
-                  className="max-w-[150px] max-h-[75px] object-contain grayscale"
+                  className="max-w-[150px] max-h-[75px] object-contain"
                 />
               </div>
             </SwiperSlide>

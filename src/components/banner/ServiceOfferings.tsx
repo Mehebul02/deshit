@@ -23,14 +23,14 @@ export function ServiceOfferings() {
     <Container className="">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 ">
         {services.map((service, index) => (
-          <div key={index} className="group border-l border-orange-500  p-6 ">
+          <div key={index} className="group  border-l-2 border-orange-500  p-6 ">
             {/* Red accent line */}
             <div className="w-full h-0.5 bg-brand-red mb-6"></div>
 
             {/* Service content */}
             <div className="space-y-4">
-              <h3 className="text-xl font-semibold text-black font-sans text-balance">{service.title}</h3>
-              <p className="text-black ">{service.description}</p>
+              <h3 className="text-[24px] font-semibold text-black  text-balance">{service.title}</h3>
+              <p className="text-black text-[16px]">{service.description}</p>
             </div>
           </div>
         ))}

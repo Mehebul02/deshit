@@ -13,7 +13,7 @@ const LeftSide = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-4xl lg:text-5xl xl:text-6xl font-bold text-black leading-tight"
+              className="text-3xl lg:text-6xl xl:text-6xl font-bold text-black text-center leading-tight"
             >
               Software Development Outsourcing Services
             </motion.h1>
@@ -22,10 +22,9 @@ const LeftSide = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-lg text-gray-600 leading-relaxed max-w-lg"
+              className="text-lg text-[#141414] text-center leading-relaxed max-w-lg"
             >
-              Expand your capabilities by hiring our expert developers. We deliver top notch software outsourcing
-              solutions tailored to your needs while saving your time and resources.
+              Expand your capabilities by hiring our expert developers. We deliver top-notch software outsourching solutions tailored to your needs while saving your time and resources.
             </motion.p>
           </motion.div>
         </div>
