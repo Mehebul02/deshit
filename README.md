@@ -1,69 +1,32 @@
-# React + TypeScript + Vite
+# deashIt
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a **completed UI implementation** for a MERN Stack Developer task. It features pixel-perfect frontend sections with animations, built using **React** based on a Figma design.
 
-Currently, two official plugins are available:
+## Project Status
+- **Status:** Completed ✅  
+- **Frontend:** React  
+- **Animations:** Framer Motion / CSS / React Spring / GSAP  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Live Demo
+- [View Live Demo on Vercel](#)  <!-- Replace # with your live URL -->
 
-## Expanding the ESLint configuration
+## GitHub Repository
+- [Frontend Repo](#)  <!-- Replace # with your GitHub URL -->
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Features Implemented
+- Pixel-perfect UI sections according to Figma design  
+- Hover effects, scroll animations, and smooth transitions  
+- Fully responsive across desktop, tablet, and mobile  
+- Clean, modular React components using hooks  
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Technologies Used
+- React  
+- CSS / TailwindCSS / Material-UI  
+- Framer Motion / React Spring / GSAP  
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Installation
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Mehebul02/deshit
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
