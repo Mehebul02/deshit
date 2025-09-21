@@ -24,5 +24,9 @@ This project is a **completed UI implementation** for a MERN Stack Developer tas
 - CSS / TailwindCSS / Material-UI  
 - Framer Motion / React Spring / GSAP  
 
+## Installation
 
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Mehebul02/roleDash.git
 
