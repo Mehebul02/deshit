@@ -11,7 +11,9 @@ import logo3 from "./companies_logo/logo3.png";
 import logo4 from "./companies_logo/logo4.png";
 import logo5 from "./companies_logo/logo5.png";
 import profile from "./profile.png";
-import workflow from "./workflow.png"
+import workflow from "./workflow.png";
+import companyImage1 from "./companies/image1.png";
+import companyImage2 from "./companies/image2.png";
 
 export {
     logo,
@@ -27,5 +29,7 @@ export {
     logo4,
     logo5,
     profile,
-    workflow
+    workflow,
+    companyImage1,
+    companyImage2
 };

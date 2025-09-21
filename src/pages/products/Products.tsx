@@ -1,8 +1,9 @@
+import { ManagementCards } from "../../components/products/Products";
 
 const Products = () => {
     return (
         <div>
-            <h1>Products</h1>
+           <ManagementCards/>
         </div>
     );
 };
