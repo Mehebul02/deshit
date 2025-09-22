@@ -7,6 +7,7 @@ import { LogoSlider } from "../../components/logo_slider/LogoSlider";
 import { ProfessionalBanner } from "../../components/professional_banner/Professional_Banner";
 import Container from "../../components/shared/header/Container";
 import SoftwareDevelopmentServices from "../../components/softwareDevelopmentServices/SoftwareDevelopmentServices";
+import TechnologySection from "../../components/technology/Technology";
 
 const Home = () => {
     return (
@@ -20,6 +21,7 @@ const Home = () => {
             <SoftwareDevelopmentServices />
             <DevelopmentOutsourcing />
             <DevelopmentWorkflow/>
+            <TechnologySection/>
         </div>
     );
 };
