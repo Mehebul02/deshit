@@ -1,11 +1,10 @@
-"use client"
 
 import { useState, useEffect } from "react"
-
 
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import { Card, CardContent } from "../ui/card"
 import { Button } from "../ui/button"
+import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar"
 
 
 const testimonials = [
@@ -50,22 +49,18 @@ const testimonials = [
 export default function TestimonialsSlider() {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isAutoPlaying, setIsAutoPlaying] = useState(true)
-
   // Auto-slide functionality
   useEffect(() => {
     if (!isAutoPlaying) return
-
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1))
     }, 5000) // Change slide every 5 seconds
-
     return () => clearInterval(interval)
   }, [isAutoPlaying])
 
   const goToSlide = (index: number) => {
     setCurrentIndex(index)
     setIsAutoPlaying(false) // Pause auto-play when user manually navigates
-
     // Resume auto-play after 10 seconds of inactivity
     setTimeout(() => setIsAutoPlaying(true), 10000)
   }
@@ -94,7 +89,7 @@ export default function TestimonialsSlider() {
 
         {/* Testimonial Slider */}
         <div className="relative">
-          <Card className="bg-white shadow-lg border-2 border-dashed border-gray-300 min-h-[300px]">
+          <Card className="">
             <CardContent className="p-8">
               <div className="flex flex-col items-center text-center space-y-6">
                 {/* Client Avatar */}
@@ -116,7 +111,6 @@ export default function TestimonialsSlider() {
                   <blockquote className="text-gray-700 text-lg leading-relaxed mb-6">
                     "{testimonials[currentIndex].content}"
                   </blockquote>
-
                   <div className="space-y-1">
                     <h4 className="font-semibold text-gray-900 text-lg">{testimonials[currentIndex].name}</h4>
                     <p className="text-gray-600 text-sm">{testimonials[currentIndex].company}</p>
@@ -146,7 +140,7 @@ export default function TestimonialsSlider() {
             <ChevronRight className="h-4 w-4" />
           </Button>
         </div>
-
+<h1 className="text-center mt-4">Patrick Stockwell, Founder, Volta Inc. San Francisco Bay Area, USA, Project: Baller ID</h1>
         {/* Dots Indicator */}
         <div className="flex justify-center space-x-2 mt-8">
           {testimonials.map((_, index) => (
@@ -158,14 +152,6 @@ export default function TestimonialsSlider() {
               onClick={() => goToSlide(index)}
             />
           ))}
-        </div>
-
-        {/* Auto-play indicator */}
-        <div className="flex justify-center mt-4">
-          <div className="flex items-center space-x-2 text-sm text-gray-500">
-            <div className={`w-2 h-2 rounded-full ${isAutoPlaying ? "bg-green-500 animate-pulse" : "bg-gray-400"}`} />
-            <span>{isAutoPlaying ? "Auto-playing" : "Paused"}</span>
-          </div>
         </div>
       </div>
     </section>

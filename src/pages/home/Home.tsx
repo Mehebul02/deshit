@@ -8,6 +8,7 @@ import { ProfessionalBanner } from "../../components/professional_banner/Profess
 import Container from "../../components/shared/header/Container";
 import SoftwareDevelopmentServices from "../../components/softwareDevelopmentServices/SoftwareDevelopmentServices";
 import TechnologySection from "../../components/technology/Technology";
+import TestimonialsSlider from "../../components/testimonials/Testimonials_Slider";
 
 const Home = () => {
     return (
@@ -22,6 +23,7 @@ const Home = () => {
             <DevelopmentOutsourcing />
             <DevelopmentWorkflow/>
             <TechnologySection/>
+            <TestimonialsSlider/>
         </div>
     );
 };

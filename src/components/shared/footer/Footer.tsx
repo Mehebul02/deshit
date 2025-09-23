@@ -62,14 +62,14 @@ export default function Footer() {
             <div className="flex space-x-3">
               <a
                 href="#"
-                className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors"
+                className="w-8 h-8 bg-[#FA7470] rounded-full flex items-center justify-center hover:bg-[#FA7470] transition-colors"
                 aria-label="Facebook"
               >
                 <Facebook className="w-4 h-4 text-white" />
               </a>
               <a
                 href="#"
-                className="w-8 h-8 bg-blue-700 rounded-full flex items-center justify-center hover:bg-blue-800 transition-colors"
+                className="w-8 h-8 bg-[#FA7470] rounded-full flex items-center justify-center hover:bg-[#FA7470] transition-colors"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-4 h-4 text-white" />
@@ -82,7 +82,7 @@ export default function Footer() {
             <h3 className="font-semibold text-gray-900 mb-4">Get In Touch</h3>
             <div className="space-y-3">
               <Input type="email" placeholder="Enter your Email" className="w-full" />
-              <Button className="w-full bg-red-500 hover:bg-red-600 text-white font-medium">SUBSCRIBE</Button>
+              <Button className="w-full bg-[#FA7470] hover:bg-red-600 text-white font-medium">SUBSCRIBE</Button>
             </div>
           </div>
         </div>
