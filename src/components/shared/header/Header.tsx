@@ -9,7 +9,8 @@ import DesktopMenu from "./DasktopMenu"
 import Container from "./Container"
 
 const navigation = [
-  { name: "Home", href: "/" },
+  { name: "Home", href: "#" },
+  { name: "Services", href: "/services" },
   { name: "Products", href: "/products" },
   { name: "Projects", href: "/projects" },
   { name: "Company", href: "/company" },
@@ -40,7 +41,7 @@ export default function Header() {
        <nav className=" flex  items-center justify-between p-6 lg:px-8">
         {/* Logo */}
         <div className="flex lg:flex-1">
-          <Link to="/" className="-m-1.5 p-1.5 flex items-center gap-2">
+          <Link to="#" className="-m-1.5 p-1.5 flex items-center gap-2">
                 <img src={logo} alt="DestNIT Logo" className="w-32 lg:w-52 "/>
           </Link>
         </div>

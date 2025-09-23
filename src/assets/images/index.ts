@@ -33,9 +33,12 @@ import projectImage10 from "./projects/project10.png";
 import projectImage11 from "./projects/project11.png";
 import projectImage12 from "./projects/project12.png";
 import contactImage from "./contact.png";
+import mernStack from "./training/mern.png"
+import flutter from "./training/flutter.png"
+import laravel from "./training/laravel.png"
 
 export { logo,icon1, icon2, icon3,  icon4,  icon5,  icon6,logo1,logo2,logo3,logo4, logo5, profile,workflow,companyImage1,
     companyImage2, productImage1, productImage2, productImage3, productImage4, productImage5, productImage6,
     projectImage1, projectImage2, projectImage3, projectImage4, projectImage5, projectImage6, projectImage7, projectImage8, projectImage9, projectImage10, projectImage11, projectImage12,
-contactImage
+contactImage, mernStack, flutter, laravel
 };

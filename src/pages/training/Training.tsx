@@ -1,5 +1,5 @@
 
-import { projectImage1 } from '../../assets/images';
+import { flutter, laravel, mernStack,  } from '../../assets/images';
 import CustomBanner from '../../components/shared/CustomBanner';
 import { motion } from "framer-motion";
 import { CustomCard } from '../../components/shared/CustomCard';
@@ -7,9 +7,19 @@ import { CustomCard } from '../../components/shared/CustomCard';
 const trainings = [
   {
     id: 1,
-    title: "Swoop News",
-    image: projectImage1,
+    title: "Flutter",
+    image: flutter  ,
   },
+  {
+    id: 2,
+    title: "MERN Stack",
+    image: mernStack,
+  },
+  {
+    id: 3,
+    title: "Laravel",
+    image: laravel,
+  }
 ];
 
 const containerVariants = {
@@ -31,9 +41,9 @@ const cardVariants = {
 const Training = () => {
     return (
         <div>
-           <CustomBanner title="Our Training" subtile="Our Training"/>
+           <CustomBanner title="Training" subtile="Training"/>
               <motion.div
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 max-w-6xl mx-auto py-8 p-4 lg:mb-14"
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 max-w-6xl mx-auto  p-4 "
         variants={containerVariants}
         initial="hidden"
         animate="visible"
