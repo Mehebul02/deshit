@@ -3,7 +3,7 @@ import CustomBanner from "../../components/shared/CustomBanner";
 import { motion } from "framer-motion";
 import { CustomCard } from "../../components/shared/CustomCard";
 import {  projectImage1, projectImage10, projectImage11, projectImage12, projectImage2, projectImage3, projectImage4, projectImage5, projectImage6, projectImage7, projectImage8, projectImage9 } from "../../assets/images";
-const managementSystems = [
+const projects = [
   {
     id: 1,
     title: "Swoop News",
@@ -95,7 +95,7 @@ const Projects = () => {
         initial="hidden"
         animate="visible"
       >
-        {managementSystems.map((item) =><CustomCard key={item.id} image={item.image} id={item.id} title={item.title} cardVariants={cardVariants} />)}
+        {projects.map((item) =><CustomCard key={item.id} image={item.image} id={item.id} title={item.title} cardVariants={cardVariants} />)}
       </motion.div>
         </div>
     );
