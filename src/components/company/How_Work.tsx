@@ -4,7 +4,7 @@ export default function HowWork() {
   return (
     <main className="">
       {/* How we work section */}
-      <section className="bg-[#FA8370] px-6 py-16 text-center">
+  <section className="bg-gradient-to-r from-[#FA7470] to-[#FA9370] px-6 py-16 text-center">
         <div className="mx-auto max-w-4xl">
           <h2 className="mb-6 text-4xl font-bold text-white">How we work</h2>
           <p className="mb-8 text-lg leading-relaxed text-white">

@@ -2,7 +2,8 @@
 import { motion } from "framer-motion";
 import CustomBanner from "../shared/CustomBanner";
 import { productImage1, productImage2, productImage3, productImage4, productImage5, productImage6 } from "../../assets/images";
-const managementSystems = [
+import { CustomCard } from "../shared/CustomCard";
+const products = [
   {
     id: 1,
     title: "Gym Management System",
@@ -52,10 +53,10 @@ const cardVariants = {
   },
 };
 
-export function ManagementCards() {
+export function ProductsCards() {
   return (
     <div>
-      <CustomBanner pageTitle="Our Products" />
+      <CustomBanner title="Our Products"  subtile="Our Products "/>
 
       <motion.div
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 max-w-6xl mx-auto py-8 p-4 lg:mb-14"
@@ -63,31 +64,7 @@ export function ManagementCards() {
         initial="hidden"
         animate="visible"
       >
-        {managementSystems.map((system) => (
-          <motion.div
-            key={system.id}
-            variants={cardVariants}
-            className="cursor-pointer group"
-          >
-            <div className="border-0 relative">
-        
-              <motion.img
-                src={system.image}
-                alt={system.title}
-                className="w-full object-cover rounded-xl"
-                whileHover={{ scale: 1.05, y: -5 }}
-                transition={{ type: "spring", stiffness: 300, damping: 20 }}
-              />
-
-              <div className="absolute bg-white w-[250px] mx-auto -bottom-10 py-4 text-center left-0 right-0 rounded-lg shadow-lg p-4 
-                              border-b-2 border-transparent group-hover:border-gray-400 transition-all duration-300">
-                <h3 className="text-md font-medium text-gray-900">
-                  {system.title}
-                </h3>
-              </div>
-            </div>
-          </motion.div>
-        ))}
+        {products.map((item) =><CustomCard key={item.id} image={item.image} id={item.id} title={item.title} cardVariants={cardVariants} />)}
       </motion.div>
     </div>
   );

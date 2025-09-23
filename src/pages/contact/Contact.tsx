@@ -3,6 +3,7 @@ import { Phone, Mail, MapPin } from "lucide-react"
 import { Input } from "../../components/ui/input"
 import { Button } from "../../components/ui/button"
 import { Textarea } from "../../components/ui/textarea"
+import { contactImage } from "../../assets/images"
 
 
 export default function Contact() {
@@ -19,10 +20,10 @@ export default function Contact() {
               </p>
             </div>
             <div className="flex justify-center">
-              <div className="relative w-80 h-64">
+              <div className="relative w-96 h-64">
                 <img
-                  src="/contact-illustration.png"
-                  alt="Contact illustration showing person at desk with communication icons"
+                  src={contactImage}
+                  alt="Contact"
            
                   className="object-contain"
                 />
@@ -102,7 +103,7 @@ export default function Contact() {
                 <div>
                   <Button
                     type="submit"
-                    className="bg-coral-500 hover:bg-coral-600 text-white px-8 py-3 rounded-lg font-medium transition-colors"
+                    className="bg-[#FA8370] hover:bg-[#ff8976] cursor-pointer text-white px-8 py-3 rounded-lg font-medium transition-colors"
                   >
                     Send your Message
                   </Button>

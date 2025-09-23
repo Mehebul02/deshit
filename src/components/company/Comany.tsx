@@ -1,10 +1,13 @@
 import { companyImage1, companyImage2 } from "../../assets/images";
+import CustomBanner from "../shared/CustomBanner";
+
 import HowWork from "./How_Work";
 
 export default function CompanySection() {
   return (
-    <div className=" bg-gray-50 py-12 px-6">
-      <div className="max-w-6xl mx-auto">
+    <div className=" bg-gray-50  ">
+      <div className="max-w-7xl mx-auto ">
+        <CustomBanner title="Company" subtile="Company"/>
         {/* Header Section */}
         <h1 className="text-5xl font-bold text-slate-800 mb-4">DeshITBD</h1>
             <h2 className="text-[30px] font-semibold text-[#FA8370] mb-8 tracking-wide">
